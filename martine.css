@@ -1,86 +1,10 @@
-.container {
-  max-width: 960px;
+:focus {
+  outline: none;
 }
-.pt-2, .py-2 {
-  padding-top: 1rem!important;
+.container-fluid {
+  margin-top: 2vh;
 }
-.container-nav {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/*
- * Custom translucent site header
- */
-
-.site-header a {
-  color: black;
-  transition: ease-in-out color .15s;
-  font-weight: 300;
-}
-.site-header a:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.biographie .lead {
-  color: #999;
-  font-family: 'lato', sans-serif;
-  font-size: 1em;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-
-.biographie .title {
-  color: #111;
-  font-family: 'lato', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2em;
-  font-size: 1.37em;
-  font-weight: 300;
-}
-
-
-.intersection-1, .intersection-2 {
-  background-color: #999;
-}
-
-/*
- * Extra utilities
- */
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
-  }
-}
-
-.overflow-hidden { overflow: hidden; }
-
-.head{
-  position: relative;
-  color: white;
-  background:url('img/background.png') center/cover;
-  z-index: 0;
-  padding: 120px 0 !important
-}
-.head h1, .head p{
-  z-index: 1;
-}
-.head h1{
-  font-weight: 300;
-  font-family: 'lato', sans-serif;
-  font-size: 1em;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-h1, h2{
+h1{
   font-weight: 300;
   font-family: 'lato', sans-serif;
   font-size: 1em;
@@ -89,97 +13,89 @@ h1, h2{
   text-transform: uppercase;
   font-size: 1.5em;
 }
-.head::after{
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.3);
-  z-index:-1;
-}
-
-.bg-light {
-  background-color: white!important;
+h2{
+  font-family: 'lato', sans-serif;
+  letter-spacing: .5px;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  color:rgb(90, 90, 90);
 }
 p{
   font-weight: 300;
-  font-size: 1.1em;
+  color: rgb(90, 90, 90);
 }
-.head .lead{
+.title {
+  font-weight: 300;
   font-family: 'lato', sans-serif;
-  text-transform: uppercase;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+.nav li a{
+  color: rgb(110, 110, 110);
   letter-spacing: 1px;
-  margin-bottom: 0.9em;
-  font-size: 1.5em;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.nav li a:hover{
+  font-weight: 400;
+  text-decoration: none;
+}
+img{
+  max-width: 90%;
+  max-height: 90%;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(245, 244, 244);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-bloc{
+  height: 93vh;
+}    
+.prev-next{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.prev-next p{
+  color: gray;
+  cursor: pointer;
+}
+.prev-next p:hover{
   font-weight: 400;
 }
-.adress{   
-font-weight: 300;
-font-size: 1.1em;
-} 
-.logo{
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: 'lato', sans-serif;
-  font-size: 1em;
-  letter-spacing: 1px;
+.texte-bloc{
+  padding-left: 2em !important;
 }
-.columns-3{
-  background: rgb(243, 243, 243);
-  padding: 100px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.texte-bloc a{
+  color: rgb(90, 90, 90);
 }
-.columns-3 img{height: 300px;
-margin-right: 25px;
-margin-bottom: 30px}
-.columns-3 .container{
-  padding: 0 !important;
+.texte-bloc a:hover{
+  font-weight: 400;
+  text-decoration: none;
 }
-.columns-3 h2.container{
-  padding: 20px 0 50px 0 !important;
-  display: none;
+.cv-title{
+  margin-top: 25px;
 }
-main .subtitle{
-    color: #999;
-    font-family: 'lato', sans-serif;
-    font-size: 1em;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-.expositions .subtitle{
-  margin-top: 15px;
-}
-.expositions .title{
-  margin-bottom: 40px;
-}
-.intersection-2{
-  background: url('img/back-2.jpg') center/cover;
-  height: 350px;
-}
-footer .subtitle{
-  font-family: 'lato', sans-serif;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-footer li{
-  font-size: 1em;
-  font-weight: 300;
-}
-footer a{
-  color: black;
-}
-.text-muted {
-  color: black!important;
-}
-footer{
-  padding: 60px 0 50px 0 !important;
+.onglet-active{
+  font-weight: 400 !important;
 }
