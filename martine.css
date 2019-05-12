@@ -99,3 +99,23 @@ img{
 .onglet-active{
   font-weight: 400 !important;
 }
+.galery-link{
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+iframe{
+  width: 750px;
+  height: 450px;
+}
+@media screen and (max-width:1000px){
+  iframe{
+    width: 500px;
+    height: 350px;
+  }
+}
+@media screen and (max-width:700px){
+  iframe{
+    width: 100%;
+    height: 30vh;
+  }
+}
